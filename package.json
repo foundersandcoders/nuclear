@@ -1,13 +1,17 @@
 {
   "name": "nuclear",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Modular small front end framework",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/index.js",
+    "phantom": "run-browser test/index.js -b | tap-spec",
+    "browser": "run-browser test/index.js",
+    "cover": "istanbul cover --report html --print detail ./test/index.js",
+    "view-cover": "istanbul report html && opn coverage/index.html"
   },
   "repository": {
     "type": "git",
@@ -33,6 +37,11 @@
     "observ-varhash": "^1.0.6"
   },
   "devDependencies": {
+    "function-bind": "^1.0.2",
+    "istanbul": "^0.3.17",
+    "opn": "^2.0.1",
+    "run-browser": "^2.0.2",
+    "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   }
 }
