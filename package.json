@@ -1,0 +1,38 @@
+{
+  "name": "nuclear",
+  "version": "1.0.0",
+  "description": "Modular small front end framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foundersandcoders/nuclear.git"
+  },
+  "keywords": [
+    "framework",
+    "frontend",
+    "virtual-dom",
+    "web",
+    "modular"
+  ],
+  "author": "Besart Hoxhaj, Wil Fisher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foundersandcoders/nuclear/issues"
+  },
+  "homepage": "https://github.com/foundersandcoders/nuclear",
+  "dependencies": {
+    "observ": "^0.2.0",
+    "observ-array": "^3.2.1",
+    "observ-struct": "^6.0.0",
+    "observ-varhash": "^1.0.6"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
