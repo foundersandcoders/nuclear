@@ -1,6 +1,6 @@
 {
   "name": "nuclear.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modular small front end framework",
   "main": "index.js",
   "directories": {
@@ -31,10 +31,12 @@
   },
   "homepage": "https://github.com/foundersandcoders/nuclear",
   "dependencies": {
+    "nuclear-router": "0.0.2",
     "observ": "^0.2.0",
     "observ-array": "^3.2.1",
     "observ-struct": "^6.0.0",
-    "observ-varhash": "^1.0.6"
+    "observ-varhash": "^1.0.6",
+    "xhr": "^2.0.2"
   },
   "devDependencies": {
     "function-bind": "^1.0.2",

@@ -3,6 +3,7 @@
 
 var nuclear = module.exports = {
   app:           app,
+  router:        require('nuclear-router'),
   diff:          require('virtual-dom/diff'),
   patch:         require('virtual-dom/patch'),
   createElement: require('virtual-dom/create-element'),
@@ -10,7 +11,8 @@ var nuclear = module.exports = {
   observ:        require('observ'),
   observS:       require('observ-struct'),
   observA:       require('observ-array'),
-  observV:       require('observ-varhash')
+  observV:       require('observ-varhash'),
+  request:       require('xhr')
 };
 
 
