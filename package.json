@@ -1,5 +1,5 @@
 {
-  "name": "nuclear",
+  "name": "nuclear.js",
   "version": "0.0.1",
   "description": "Modular small front end framework",
   "main": "index.js",

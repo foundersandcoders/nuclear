@@ -1,4 +1,4 @@
-# nuclear
+# nuclear.js
 Super small modular frontend framework.
 
 Taking a lot of tips from React and [Mercury](http://github.com/Raynos/mercury), nuclear is extremely small.
@@ -7,7 +7,7 @@ Taking a lot of tips from React and [Mercury](http://github.com/Raynos/mercury),
 
 ```js
 
-var nuclear = require('nuclear');
+var nuclear = require('nuclear.js');
 var h = nuclear.h;
 
 function App () {
