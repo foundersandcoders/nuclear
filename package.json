@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/foundersandcoders/nuclear",
   "dependencies": {
-    "nuclear-router": "0.0.2",
+    "nuclear-router": "^0.0.3",
     "observ": "^0.2.0",
     "observ-array": "^3.2.1",
     "observ-struct": "^6.0.0",
