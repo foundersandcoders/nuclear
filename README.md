@@ -1,6 +1,8 @@
 # nuclear.js
 
 [![Build Status](https://travis-ci.org/foundersandcoders/nuclear.svg)](https://travis-ci.org/foundersandcoders/nuclear)
+[![Code Climate](https://codeclimate.com/github/foundersandcoders/nuclear/badges/gpa.svg)](https://codeclimate.com/github/foundersandcoders/nuclear)
+[![Test Coverage](https://codeclimate.com/github/foundersandcoders/nuclear/badges/coverage.svg)](https://codeclimate.com/github/foundersandcoders/nuclear/coverage)
 
 Super small modular frontend framework.
 

@@ -20,15 +20,15 @@ test('Nuclear', function (t) {
 			var $ = window.$;
 			
 			var nuclear = require('../');
-			var Toggle  = require('../example/Toggle.js');
+			var toggle  = require('../example/Toggle.js');
 
 			t.test('render initial state', function (st) {
 
-				var state = Toggle({text: 'Bes'});
+				var state = toggle({text: 'Bes'});
 
-				var vDom  = Toggle.render(state);
+				var vDom  = toggle.render(state);
 
-				nuclear.app(window.document.body, state, Toggle.render, {
+				nuclear.app(window.document.body, state, toggle.render, {
 					document: window.document
 				});
 
@@ -41,11 +41,11 @@ test('Nuclear', function (t) {
 
 				clear(window);
 
-				var state = Toggle({});
+				var state = toggle({});
 
-				var vDom  = Toggle.render(state);
+				var vDom  = toggle.render(state);
 
-				nuclear.app(window.document.body, state, Toggle.render, {
+				nuclear.app(window.document.body, state, toggle.render, {
 					document: window.document
 				});
 

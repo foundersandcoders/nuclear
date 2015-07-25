@@ -11,7 +11,7 @@
   "forin"         : false,
   "immed"         : true,
   "indent"        : 2,
-  "latedef"       : true,
+  "latedef"       : false,
   "loopfunc"      : false,
   "noarg"         : true,
   "node"          : true,

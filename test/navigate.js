@@ -20,15 +20,15 @@ test('Nuclear test component Navigate.js: ', function (t) {
 			global.document = window.document;
 
 			var nuclear     = require('../');
-			var Navigate    = require('../example/Navigate.js');
+			var navigate    = require('../example/Navigate.js');
 
 			t.test('render initial state', function (st) {
 
-				var state = Navigate({});
+				var state = navigate({});
 
-				var vDom  = Navigate.render(state);
+				var vDom  = navigate.render(state);
 
-				nuclear.app(window.document.body, state, Navigate.render, {
+				nuclear.app(window.document.body, state, navigate.render, {
 					document: window.document
 				});
 
@@ -41,11 +41,11 @@ test('Nuclear test component Navigate.js: ', function (t) {
 
 				clear(window);
 
-				var state = Navigate({});
+				var state = navigate({});
 
-				var vDom  = Navigate.render(state);
+				var vDom  = navigate.render(state);
 
-				nuclear.app(window.document.body, state, Navigate.render, {
+				nuclear.app(window.document.body, state, navigate.render, {
 					document: window.document
 				});
 
