@@ -1,6 +1,6 @@
 {
   "name": "nuclear.js",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Modular small front end framework",
   "main": "index.js",
   "directories": {
