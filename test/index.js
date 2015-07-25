@@ -1,8 +1,8 @@
 'use strict';
 
-var test = require('tape');
-
-var nuclear = require('../index.js');
+var test    = require('tape');
+var decache = require('decache');
+var nuclear = require('../');  
 
 if (!Function.prototype.bind) {
   Function.prototype.bind = require('function-bind');
@@ -10,16 +10,18 @@ if (!Function.prototype.bind) {
 
 test('Nuclear is an object', function t (assert) {
 
-  assert.equal(typeof nuclear, 'object');
-  assert.end();
+	assert.equal(typeof nuclear, 'object');
+	assert.end();
 });
 
 test('If dom element is not present, throw error', function t (assert) {
 
-  try {
-    nuclear.app(null);
-  } catch (e) {
-    assert.equal(e.message, 'Element does not exist. Nuclear cannot be initialized.');
-    assert.end();
-  }
+	try {
+		nuclear.app(null);
+	} catch (e) {
+		assert.equal(e.message, 'Element does not exist. Nuclear cannot be initialized.');
+		assert.end();
+	}
 });
+
+decache('../');

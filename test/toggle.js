@@ -2,9 +2,7 @@
 
 var jsdom   = require('jsdom');
 var test    = require('tape');
-var nuclear = require('../');
-var Toggle  = require('../example/Toggle.js');
-
+var decache = require('decache');
 
 function clear (window) {
 
@@ -20,6 +18,9 @@ test('Nuclear', function (t) {
 		function (errors, window) {
 
 			var $ = window.$;
+			
+			var nuclear = require('../');
+			var Toggle  = require('../example/Toggle.js');
 
 			t.test('render initial state', function (st) {
 
@@ -54,8 +55,10 @@ test('Nuclear', function (t) {
 
 				st.equals($('h2').text(), 'Hello Foo', 'virtual dom updated and appended');
 
+				decache('../');
 				st.end();
 			});
 		}
 	);
 });
+
