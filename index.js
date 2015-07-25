@@ -16,26 +16,27 @@ var nuclear = module.exports = {
 };
 
 
-function app (elem, observ, render) {
+function app (elem, observ, render, renderOptions) {
 
   if (!elem) {
     throw new Error('Element does not exist. Nuclear cannot be initialized.');
   }
 
-	var target = start(render, observ);
+	var target = start(render, observ, renderOptions);
 	elem.appendChild(target.dom);
 
 	return observ(target.update);
 }
 
 
-function start (render, observ) {
+function start (render, observ, renderOptions) {
+
 	var virtualTree;
 	var resultsNode;
 	var target = {};
 
 	virtualTree = render(observ);
-	resultsNode = nuclear.createElement(virtualTree);
+	resultsNode = nuclear.createElement(virtualTree, renderOptions);
 	target.dom  = resultsNode;
 	target.update = function () {
 
