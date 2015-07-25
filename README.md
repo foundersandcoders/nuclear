@@ -1,4 +1,7 @@
 # nuclear.js
+
+[![Build Status](https://travis-ci.org/foundersandcoders/nuclear.svg)](https://travis-ci.org/foundersandcoders/nuclear)
+
 Super small modular frontend framework.
 
 Taking a lot of tips from React and [Mercury](http://github.com/Raynos/mercury), nuclear is extremely small.
