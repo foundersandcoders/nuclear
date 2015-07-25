@@ -39,6 +39,7 @@
     "observ-array": "^3.2.1",
     "observ-struct": "^6.0.0",
     "observ-varhash": "^1.0.6",
+    "virtual-dom": "^2.0.1",
     "xhr": "^2.0.2"
   },
   "devDependencies": {
